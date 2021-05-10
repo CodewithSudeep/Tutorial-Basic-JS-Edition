@@ -83,14 +83,14 @@ const number = 3 + 5; // 8
 Here, the + operator is used to add two operands.
 
 
-> 	Addition	x + y
->	Subtraction	x - y
->	Multiplication	x * y
->	Division	x / y
->	Remainder	x % y
->	Increment (increments by 1)	++x or x++
->	Decrement (decrements by 1)	--x or x-- 
->	Exponentiation (Power)	x ** y
+- 	Addition	```x + y```
+-	Subtraction	```x - y```
+-	Multiplication	```x * y```
+-	Division	```x / y```
+-	Remainder	```x % y```
+-	Increment (increments by 1)	```++x``` or ```x++```
+-	Decrement (decrements by 1)	```--x``` or ```x--``` 
+-	Exponentiation (Power)	```x ** y```
 
 #### Example 1: Arithmetic operators in JavaScript
 ```
@@ -139,14 +139,14 @@ console.log(a > b); // true
 >Here, the comparison operator > is used to compare whether a is greater than b.
 
 
-> ==	Equal to: returns true if the operands are equal	x == y
-> !=	Not equal to: returns true if the operands are not equal	x != y
-> ===	Strict equal to: true if the operands are equal and of the same type	x === y
-> !==	Strict not equal to: true if the operands are equal but of different type or not equal at all	x !== y
->	Greater than: true if left operand is greater than the right operand	x > y
->=	Greater than or equal to: true if left operand is greater than or equal to the right operand	x >= y
-> <	Less than: true if the left operand is less than the right operand	x < y
-> <=	Less than or equal to: true if the left operand is less than or equal to the right operand	x <= y
+- ```==```	Equal to: returns true if the operands are equal	```x == y```
+- ```!=```	Not equal to: returns true if the operands are not equal	```x != y```
+- ```===```	Strict equal to: true if the operands are equal and of the same type	```x === y```
+- ```!==```	Strict not equal to: true if the operands are equal but of different type or not equal at all	```x !== y```
+- ```>```	Greater than: true if left operand is greater than the right operand	```x > y```
+- ```>=```	Greater than or equal to: true if left operand is greater than or equal to the right operand	```x >= y```
+- ```<```	Less than: true if the left operand is less than the right operand	```x < y```
+- ```<=```	Less than or equal to: true if the left operand is less than or equal to the right operand	```x <= y```
 
 #### Example 2: Comparison operators in JavaScript
 ```
@@ -177,9 +177,9 @@ const x = 5, y = 3;
 > Here, && is the logical operator AND. Since both x < 6 and y < 5 are true, the result is true.
 
 
-> &&	Logical AND: true if both the operands are true, else returns false	x && y
-> ||	Logical OR: true if either of the operands is true; returns false if both are false	x || y
-> !	Logical NOT: true if the operand is false and vice-versa.	!x
+-  ```&&```	Logical AND: true if both the operands are true, else returns false	```x && y```
+- ```||```	Logical OR: true if either of the operands is true; returns false if both are false	```x || y```
+- ```!```	Logical NOT: true if the operand is false and vice-versa.	```!x```
 
 #### Example 3: Logical Operators in JavaScript
 ```
