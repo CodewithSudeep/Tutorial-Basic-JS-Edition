@@ -12,9 +12,14 @@
         let num = 11;
 
         // perform pre and post increment/decrement simultaneously
+        num=++num;  //pre increment
+        num=num++;  //post increment
+        document.write("Aftter pre-increment and post-increment:",num,"<br>");
 
-
+        num=--num;  //pre decrement
+        result =num--; //post decrement
         //write result on webpage
+        document.write("Aftter pre-deccrement and post-decrement:",num,"<br>");
     </script>
 </body>
 </html>
