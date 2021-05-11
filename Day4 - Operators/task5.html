@@ -7,13 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="result"></p>
     <script>
+        const display = document.getElementById('result');
         let num1 = 11, num2 = 21;
-
         //perform all comparison operations to compare num1 and num2 and write all the result on webpage
-
-
-
+        let final = (num1==num2);
+        display.innerHTML += `(num1==num2) = ${final} <br/>`;
+        final = (num1!=num2);
+        display.innerHTML += `(num1!=num2) = ${final} <br/>`;
+          final = (num1 ===num2);
+          display.innerHTML += `(num1===num2) = ${final} <br/>`;
+          final = (num1 !==num2);
+          display.innerHTML += `(num1!==num2) = ${final} <br/>`;
+          final = (num1<num2);
+          display.innerHTML += `(num1<num2) = ${final} <br/>`;
+          final = (num1>num2);
+          display.innerHTML += `(num1>num2) = ${final} <br/>`;
+          final = (num1>=num2);
+          display.innerHTML += `(num1>=num2) = ${final} <br/>`;
+          final = (num1<=num2);
+          display.innerHTML += `(num1<=num2) = ${final} <br/>`;
 
         
     </script>

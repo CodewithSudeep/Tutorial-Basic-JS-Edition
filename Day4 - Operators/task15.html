@@ -13,9 +13,13 @@
             address: "NEPAL",
             contact: "9808383500"
         }
-
         // concate each prop of object and print the result
-        
+        let final = person.name +" " +person.address +" " + person.contact;
+        document.write(final);
+        for(value in person){
+            let final = person[value] + " ";
+        }
+        console.log(final);
     </script>
 </body>
 </html>
