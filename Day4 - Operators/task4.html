@@ -12,9 +12,26 @@
         let num = 11;
 
         // perform pre and post increment/decrement simultaneously
-
-
         //write result on webpage
+
+        
+        //increment
+        num+=1;    //pre-increment is done.. 
+        document.getElementById('after pre increment').innerHTML = num;
+
+        num=+1;  // post-increment is done.
+        document.getElementById('<br>after post increment').innerHTML = num;
+
+        
+        //decrement
+        num-=1;  //pre-decrement.
+        document.getElementById('<br>after pre decrement').innerHTML =  num;
+
+        num=-1; //post-decrement.
+        document.getElementById('<br>after post decrement').innerHTML = num;
+
+
+
     </script>
 </body>
 </html>
