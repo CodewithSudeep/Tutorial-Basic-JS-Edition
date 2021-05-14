@@ -11,12 +11,22 @@
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
+        result3 = String(a);
+        document.write(typeof result3);
+ 
+        result4 = String(b);
+        document.write(typeof result4);
+        
+       result1 = c.toString();
+       document.write(typeof result1);
 
-
+       result2 = d.toString();
+       document.write(typeof result2);
 
         // demonstrate the use of toString() function
+       /* The toString() method in Javascript is used with a number and converts the number to a string. It is used to return a string representing the specified Number object.
 
-
+          */
         // String() takes null and undefined and converts them to string. 
         // However, toString() gives error when null are passed.
         
