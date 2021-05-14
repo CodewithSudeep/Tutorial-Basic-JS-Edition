@@ -11,10 +11,29 @@
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
+        let aString = String(a);
+        document.write(aString); //null
 
+        let bString = String("<br>" +b);
+        document.write(bString); //undefined
 
+        let cString = String("<br>" +c);
+        document.write(cString); //true
+
+        let dString = String("<br>" + d);
+        document.write(dString + "<br>"); //false
 
         // demonstrate the use of toString() function
+        let aa = a.toString();
+        document.write(aa + "<br>");
+        
+        let str = "Hello";
+        let result = str.toString();
+        document.write(result +"<br>");
+
+        let num = 15;
+        let numResult = num.toString();
+        document.write(numResult);
 
 
         // String() takes null and undefined and converts them to string. 

@@ -11,7 +11,13 @@
         let a = '45';
         let b= null;
         //convert variable a & b into number explicitly and subtract from 200;
+        let convertA = Number(a);
+        let result = 200 - convertA; 
+        document.write("Result = " + result + "<br>");
 
+        let convertNull = Number(null);
+        let result1 = 200 - convertNull;
+        document.write("Result = " + result1);
 
     </script>
 </body>
