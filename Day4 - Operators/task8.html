@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<p id="demo"></p>
 <body>
     <script>
         let nummber = 11;
@@ -14,6 +15,11 @@
 
 
         // write the result
+
+        document.getElementById("demo").innerHTML = (nummber < 10);
+        document.getElementById("demo").innerHTML = (nummber == 11);
+       
+        
     </script>
 </body>
 </html>

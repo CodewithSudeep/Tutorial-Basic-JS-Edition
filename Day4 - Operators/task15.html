@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<p id="demo"></p>
 <body>
     <script>
         var person = {
@@ -13,6 +14,8 @@
             address: "NEPAL",
             contact: "9808383500"
         }
+        var result = person.name + " "+ person.address + " " + person.contact;
+        document.getElementById("demo").innerHTML = result;
 
         // concate each prop of object and print the result
         

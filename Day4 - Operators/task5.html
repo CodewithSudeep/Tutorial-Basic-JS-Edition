@@ -7,12 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
         let num1 = 11, num2 = 21;
 
         //perform all comparison operations to compare num1 and num2 and write all the result on webpage
 
 
+      document.getElementById("demo").innerHTML = (num1 == num2);
+
+        document.getElementById("demo").innerHTML = (num1 > num2);
+      document.getElementById("demo").innerHTML = (num1 === num2);
+      document.getElementById("demo").innerHTML = (num1 <= num2);
+
+        document.getElementById("demo").innerHTML = (num1 !== num2);
 
 
         

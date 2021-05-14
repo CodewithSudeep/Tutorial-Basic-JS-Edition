@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<p id="demo"></p>
 <body>
     <script>
 
         let a = true, b = false;
 
         //perform all logical operation in JS and write the result
+        
+        document.getElementById("demo").innerHTML = (a==true && b==false)  ;
+      //  document.getElementById("demo").innerHTML = (a == false || b==true);
+        //document.getElementById("demo").innerHTML = (!(a == b));
+        
+
     </script>
 </body>
 </html>

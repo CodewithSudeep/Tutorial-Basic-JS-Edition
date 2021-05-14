@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<p id="demo"></p>
 <body>
     <script>
         // declare two vars
@@ -16,6 +17,14 @@
 
 
         // check if sum is greater than 50 and smaller than 100
+        
+        let num1 = 25;
+        let num2 = '99';
+        let result = num1 + num2;
+        document.getElementById('demo').innerHTML='sum is ' + result;
+        
+        document.getElementById("demo").innerHTML = (result > 50);
+        document.getElementById("demo").innerHTML = (result < 100);
 
         
 

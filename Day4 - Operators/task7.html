@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<p id="demo"></p>
 <body>
     <script>
-        let nummber = 99;
+        let number = 99;
 
         // compare the given var if it is greater than 90 or smaller than 100
 
 
         // write the result
+
+        document.getElementById("demo").innerHTML = (number > 90);
+        document.getElementById("demo").innerHTML = (number < 100);
+        
     </script>
 </body>
 </html>
