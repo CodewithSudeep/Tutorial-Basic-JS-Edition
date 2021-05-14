@@ -11,10 +11,24 @@
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
+        let aString = String(a);
+        document.write("<br> a is ", aString); //null
+
+        let bString = String(b);
+        document.write("<br> b is ", bString); //undefined
+
+        let cString = String(c);
+        document.write("<br> c is ",cString); //true
+
+        let dString = String(d);
+        document.write("<br> d is " ,dString); //false
+
 
 
 
         // demonstrate the use of toString() function
+        let result = c.toString();
+        document.write( "<br>  c is ",result);
 
 
         // String() takes null and undefined and converts them to string. 
