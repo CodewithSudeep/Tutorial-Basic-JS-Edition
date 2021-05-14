@@ -10,12 +10,15 @@
     <script>
         let age = '22';
         //change given string into number without using any function or any binary operations
-
+        let newAge = +age; //unary operator
+        document.write(newAge);
+        document.write(typeof(newAge));
 
 
         //change given string into numbers uisng JS Math functions
-
-        
+       let mathAge = Math.floor(age);
+       document.write(mathAge);
+       
     </script>
 </body>
 </html>
