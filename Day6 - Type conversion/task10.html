@@ -11,11 +11,31 @@
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
+        let achange = String(a);
+        document.write(achange + "<br>");
 
+        let bchange = String(b);
+        document.write(bchange + "<br>");
+
+        let Cchange = String(c);
+        document.write(Cchange + "<br>");
+
+        let dchange = String(d);
+        document.write(dchange + "<br>");
 
 
         // demonstrate the use of toString() function
+        let astring = toString(a);
+        document.write(astring + "<br>");
 
+        let bstring = toString(b);
+        document.write(bstring + "<br>");
+
+        let Cstring = toString(c);
+        document.write(Cstring + "<br>");
+
+        let dstring = toString(d);
+        document.write(dstring + "<br>");
 
         // String() takes null and undefined and converts them to string. 
         // However, toString() gives error when null are passed.
