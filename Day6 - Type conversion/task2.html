@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Day 6 Task-2</title>
 </head>
 <body>
     <script>
@@ -12,7 +12,18 @@
         let a = '5';
         let b = 10;
         //operations
+        let result = a + b;
+        document.write('The sum of a and b is:',result); //510 ->When a number is added to a string, JavaScript converts the number to a string before concatenation.
+                                    // numeric string used with + gives string type  
         
+        result= a - b;
+        document.write('<br> The difference of a and b is:',result); //-5 ->numeric string used with - operator  results number type.
+
+        result= a * b;
+        document.write('<br>The multiplication of a and b is:',result); //-5 ->numeric string used with * operator  results number type.
+
+        result= b / a;
+        document.write('<br> The division of a and b is:',result); //-5 ->numeric string used with / operator  results number type.
     </script>
 </body>
 </html>

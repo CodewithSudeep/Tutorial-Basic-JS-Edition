@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Day 6 Task-8</title>
 </head>
 <body>
     <script>
         let age = '22';
         //change given string into number without using any function or any binary operations
 
+        let newAge = +age;
+        document.write('Age=',newAge);
 
-
-        //change given string into numbers uisng JS Math functions
-
+        //change given string into numbers using JS Math functions
+        let finalAge=Math.floor(age);
+        document.write('<br>Age=',finalAge);
         
     </script>
 </body>

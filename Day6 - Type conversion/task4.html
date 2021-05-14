@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Day 6 Task-4</title>
 </head>
 <body>
     <script>
         // declare a boolean variable
-
+        let a = true;
 
         // declare a number varibale
+        let b= 3;
 
         // declare a string variable
-
+        let c = 'Hello';
+        
         //perform all arithmetic ops between boolean and number variable
-
-
-
+        let Addition = a + b;
+        let Subtraction = a - b;
+        let Multiplication = a * b;
+        let Division = a / b;
 
         //perform all arithmetic ops between boolean and string variable
-
+        let Add = a + c;
+        let Sub = a - c;
+        let Multiply= a * c;
+        let Div = a / c;
 
         // write all results in webpage
+        document.write('The addition of a and b is:',Addition); //4
+        document.write('<br> The subtraction of a and b is:',Subtraction); //-2
+        document.write('<br> The multiplication of a and b is:',Multiplication); //3
+        document.write('<br> The division of a and b is:',Division); //0.333
+        document.write('<br> The addition of a and c is:',Add); //trueHello
+        document.write('<br> The subtraction of a and c is:',Sub); //NaN
+        document.write('<br> The muliplication of a and c is:',Multiply); //NaN
+        document.write('<br> The division of a and c is:',Div); //NaN
+
     </script>
 </body>
 </html>

@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Day 6 Task-10</title>
 </head>
 <body>
     <script>
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
+         let aString = String(a);
+         document.write('The result of a is:',aString);
 
+         let bString = String(b);
+         document.write('<br>The result of b is:',bString);
 
+         let cString = String(c);
+         document.write('<br>The result of c is:',cString);
+
+         let dString = String(d);
+         document.write('<br>The result of d is:',dString);
 
         // demonstrate the use of toString() function
-
+        let num= 77, bool = true;
+        result = (num).toString();
+        result1 =(bool).toString();
+        document.write('<br>An example of toString() is:',result +' '+ result1); //77 true
 
         // String() takes null and undefined and converts them to string. 
         // However, toString() gives error when null are passed.
