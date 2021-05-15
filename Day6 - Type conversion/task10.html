@@ -11,10 +11,16 @@
         let a = null, b = undefined, c = false, d = true;
 
         //change all given data into string data type explicitly
-
+        numa = String(a);
+        numb = String(b);
+        numc = String(c);
+        numd = String(d);
 
 
         // demonstrate the use of toString() function
+        const sum = a + b;
+        document.write(sum.tostring()); // returns null as a and b are null and undefined
+        
 
 
         // String() takes null and undefined and converts them to string. 

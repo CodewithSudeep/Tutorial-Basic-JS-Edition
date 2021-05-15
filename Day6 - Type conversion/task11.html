@@ -9,10 +9,30 @@
 <body>
     <script>
       
-      let a = '', b = 90, c = null, e = "Sudeep";
+      let a = '', b = 90, c = null, e = "Santosh";
 
-      //change all vars into boolean data type
-        
+      //change all vars into boolean data type - there are two ways they are mentioned below;
+
+        //for falsy values like null and empty string
+        //first way
+        !!a; //false
+        !!c;//false
+        //second way
+        Boolean(a);
+        Boolean(c);
+
+        //for number
+        //first way
+        !!b; //true
+        //second way
+        Boolean(b);
+
+        //for string
+        //first way
+        !!e;
+        //second way
+        Boolean(e);
+
 
     </script>
 </body>
