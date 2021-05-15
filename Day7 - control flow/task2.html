@@ -11,13 +11,20 @@
         let first = 6.36, second = 2.6;
 
         //find square of second
-
+            let square = second ** 2;
+            document.write(square + "<br>");
         // find remainder of first divided by square of second
+        let remainder = first % square;
+        document.write(remainder + "<br>");
 
 
         // compare if square of second is less than 8.43 and greater than 5.2
         
-
+        if(square < 8.43 && square > 5.2){
+            document.write("hello");
+        }else{
+            document.write("byee");
+        }
     </script>
 </body>
 </html>
