@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = null, b = undefined, c = false, d = true;
+
+        //change all given data into string data type explicitly
+        document.write("a in string is ",String(a))
+        document.write("<br/>")
+        document.write("b in string is ",String(b))
+        document.write("<br/>")
+        document.write("c in string is ",String(c))
+        document.write("<br/>")
+        document.write("d in string is ",String(d))
+        document.write("<br/>")
+
+
+
+        // demonstrate the use of toString() function
+        result=c.toString()
+        document.write(result)
+
+        // String() takes null and undefined and converts them to string. 
+        // However, toString() gives error when null are passed.
+        
+
+    </script>
+</body>
+</html>
