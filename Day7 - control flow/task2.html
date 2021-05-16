@@ -11,12 +11,18 @@
         let first = 6.36, second = 2.6;
 
         //find square of second
+        result = second * second ;
+        // result = Math.pow(second, 2);
+        document.write("square of second is :", result) //6.760000000000001
 
         // find remainder of first divided by square of second
-
+            rem = first % result;
+            document.write("reminder is :", rem);  //6.36
 
         // compare if square of second is less than 8.43 and greater than 5.2
         
+         document.write(result < 8.43); //true
+          document.write(result > 5.2);  //true
 
     </script>
 </body>
