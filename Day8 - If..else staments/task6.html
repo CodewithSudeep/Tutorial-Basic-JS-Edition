@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-       
-       let number = prompt("Enter a number");
+        let number = prompt("Enter a number");
 
-       //check if number is positive
+        //check if number is positive
+        if (number > 0) {
+            document.write("the number is positive");
+        }
+        // negativee
+        else if (number < 0) {
 
-       // negativee
-
-       //equal to zero
-
-       
-        
+            document.write("the number is negative");
+        }
+        //equal to zero
+        else {
+            document.write("the number is equal to 0");
+        }
     </script>
 </body>
+
 </html>
