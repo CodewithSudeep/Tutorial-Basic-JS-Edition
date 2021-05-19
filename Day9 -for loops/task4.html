@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        const display = document.querySelector('#display');
+        // take a number from user using JS prompt
+         let inputNumber = parseInt(prompt("Enter a number"));
+        // find 25 preceding numbers of input provided
+        for(let i = (inputNumber - 1);i>(inputNumber-26);i--){
+            display.innerHTML += i + " ";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>The multipication table</h4>
+    <p id="display"></p>
+    <script>
+         const display = document.querySelector('#display');
+        // take a number from user
+        // print it's multipication table using for loop
+        let number = parseInt(prompt('Enter the number'));
+        for(let i =1;i<=10;i++){
+            display.innerHTML += ` ${number} * ${i} = ${number*i}<br/>`;
+        }
+
+    </script>
+</body>
+</html>

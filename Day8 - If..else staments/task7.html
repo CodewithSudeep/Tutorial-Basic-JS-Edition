@@ -8,16 +8,32 @@
 </head>
 <body>
     <script>
-        let nummber = 99;
+       
+       let number = prompt("Enter a number");
 
-        // compare the given var if it is greater than 90 or smaller than 100
-       if(number>90 || number<100){
-           document.write('The given variable  is greater than 90 or smaller than 100');
+       //check if number is exactly divided by 10
+       // if it is divided, then determine if it is a even number or odd number
+
+       // if it in not divided, find the remainder
+       // determine if remainder is even or odd.
+
+       if(number%10 == 0){
+           if(number%2 == 0){
+               document.write('The number is exactly divisible by 10 and even');
+           }else{
+            document.write('The number is exactly divisible by 10 and odd');
+           }
        }else{
-           document.write('Not in the range');
+           let rem = number%10;
+           if(rem%2 == 0){
+            document.write('The number not exactly divisible  by 10 and the remainder is even');
+           }else{
+            document.write('The number not exactly divisible  by 10 and the remainder is odd');
+           }
        }
 
-        // write the result
+       
+        
     </script>
 </body>
 </html>
