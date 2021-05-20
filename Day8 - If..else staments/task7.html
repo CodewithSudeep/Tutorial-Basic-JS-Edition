@@ -8,16 +8,32 @@
 </head>
 <body>
     <script>
-        let nummber = 99;
-
-        // compare the given var if it is greater than 90 or smaller than 100
-        if( number > 90 || number < 100){
-            document.write( number , " is greater than 90 or smaller than 100");
+       
+       let number = prompt("Enter a number");
+       let rem;
+       //check if number is exactly divided by 10
+       // if it is divided, then determine if it is a even number or odd number
+       // if it in not divided, find the remainder
+       // determine if remainder is even or odd.
+        if( number % 10 == 0 ){
+            if( number % 2 == 0){
+                document.write(number , " is divided by 10 and even");
+            }else{
+                document.write(number , " is divided by 10 and odd");
+            }
         }else{
-            document.write(number," does not lies in between 90 and 100");
+            rem=number%10;
+            document.write(rem , " is remainder when ",number," is divided by 10");
+            if(rem % 2 == 0 ){
+                document.write("<br>",rem , " is even");
+            }else{
+                document.write("<br>",rem , " is odd");
+            }
         }
+       
 
-        // write the result
+       
+        
     </script>
 </body>
 </html>
