@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // given sequence : 
+        // 1,2,2,4,8,32.......
+        // Extend given sequence upto nth terms , where n is provided by user.
+        var noc = prompt("how many terms of sequence do you want?")
+        var count = 0;
+        for (let i = 1; count <= noc; i++) {
+            count++;
+            if (i == 1) {
+                var a = 1;
+                dcoument.write(a + " ")
+            } else if (i == 2) {
+
+                var b = 2;
+                document.write(b + " ");
+            } else {
+                let res = a * b;
+                document.write(res + " ");
+                a = b;
+                b = res;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

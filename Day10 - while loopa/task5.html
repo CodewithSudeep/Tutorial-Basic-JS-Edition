@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // find the reverse of given number using for loop
+        var number = prompt("enter a multi-digit number");
+        let revnum = "";
+        while (number > 0) {
+            revnum = revnum + String(number % 10);
+            number = Math.floor(number / 10);
+        }
+        document.write(revnum);
+    </script>
+</body>
+
+</html>
