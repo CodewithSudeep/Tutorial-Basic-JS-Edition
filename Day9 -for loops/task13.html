@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // take a number from user
+        let num=Number(prompt("Enter a number"));
+        let num1=num;
+
+        // append same number to it for 5 times and then multiply the result with same number for 3 times
+        for(let i=1;i<=5;i++){
+            num=num+ num1;
+        }
+        document.write(num);
+        num*=num1**3;
+        document.write("result is: ",num);
+
+
+
+        // note: use single loop.
+
+        // hint:  set a counter = 8
+    </script>
+</body>
+</html>

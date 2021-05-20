@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print first n prime numbers where n is provided by user using JS prompts
+        let num=prompt("enter the number of prime numbers to be displayed");
+        let div=0;
+        let x=1;
+        for(let i= 2; x<=num; i++){
+            for(let j=2;j<=i;j++){
+                if(i%j==0){
+                    div++;
+                }
+            }
+            if(div==1){
+                document.write(i);
+                x++;
+            }
+        }
+    </script>
+</body>
+</html>

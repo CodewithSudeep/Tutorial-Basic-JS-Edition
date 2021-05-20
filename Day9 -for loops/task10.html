@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print fibbonaci series upto nth terms where n is provided by user
+        let term=prompt("enter nth term of sequence");
+        let z=0;
+
+        let a=1;
+        document.write(a,", ");
+        let b=2;
+        document.write(b,", ");
+
+        for(let i=0;i<(term-2);i++){
+            let c=a+b;
+        document.write(c,", ");
+        a=b;
+        b=c;
+
+        }
+        
+    </script>
+</body>
+</html>
