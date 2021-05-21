@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print fibbonaci series upto nth terms where n is provided by user
+        let number = parseInt(prompt('Enter the number'));
+        let n1 = 0;
+        let n2 = 1;
+        let sum;
+        let i;
+        for(i = 0; i < number; i++)
+        {
+            sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
+            document.write(sum + ' ');
+        }
+    </script>
+</body>
+</html>

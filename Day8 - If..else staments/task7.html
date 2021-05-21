@@ -8,15 +8,50 @@
 </head>
 <body>
     <script>
-        let nummber = 99;
+       
+       let number = prompt("Enter a number");
 
         // compare the given var if it is greater than 90 or smaller than 100
-        if(nummber > 90 || nummber < 100)
-        {
-            document.write('Number is greater than 90 and smaller than 100');
-        }
+        // if(nummber > 90 || nummber < 100)
+        // {
+        //     document.write('Number is greater than 90 and smaller than 100');
+        // }
+       //check if number is exactly divided by 10
+       if(number % 10 == 0)
+       {
+           console.log('number is exactly divided by 10');
 
-        // write the result
+           if(number % 2 == 0)
+           {
+               console.log('It is even');
+           }
+           else{
+               console.log('It is odd');
+           }
+       }
+      else
+      {
+          let remainder = number % 10;
+          console.log(remainder);    
+          
+            if( remainder % 2 == 0 )
+            {
+                console.log('It is even');
+            }
+            else
+            {
+                console.log('It is odd');
+            }
+      }
+       // if it is divided, then determine if it is a even number or odd number
+
+       // if it in not divided, find the remainder
+       // determine if remainder is even or odd.
+
+       
+
+       
+        
     </script>
 </body>
 </html>

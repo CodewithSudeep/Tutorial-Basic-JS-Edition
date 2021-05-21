@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // take multi-digit number from user
+        let number = prompt('Enter the multi-digit number');
+        let reverse = 0
+        // find the reverse of given number
+        // debugger;
+        for(let i = number.length; i > 0; i--)
+        {
+            reverse = (reverse * 10) + (number % 10)
+            number = parseInt(number/10);
+        }
+        document.write('Reverse number = ' + reverse);
+    </script>
+</body>
+</html>
