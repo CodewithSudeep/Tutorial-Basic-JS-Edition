@@ -9,9 +9,14 @@
 <body>
     <script>
         // take a number from user
-
+        let number=Number(prompt("Enter a number:"));
         // print it's multipication table using for loop
-        
+        document.write("The multiplication table of ",number," is given below:<br>");
+        let ans;
+        for(let i =1; i<=10; i++){
+            ans=number*i;
+            document.write(number," * ",i," = ",ans,"<br>");
+        }
     </script>
 </body>
 </html>

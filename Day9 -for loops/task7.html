@@ -11,6 +11,16 @@
         // given sequence : 
         // 1,2,2,4,8,32.......
         // Extend given sequence upto nth terms , where n is provided by user.
+        let number= Number(prompt("Enter the nth place for sequence:"));
+        let count=0,a=1,b=2,c;
+        document.write("The sequence upto ",number," th place is :<br>",a," ",b," ");
+        for(let i=0; count<(number-2) ; i++){
+            c=a * b;
+            document.write(c," ");
+            a=b;
+            b=c;
+            count++;
+        }
     </script>
 </body>
 </html>

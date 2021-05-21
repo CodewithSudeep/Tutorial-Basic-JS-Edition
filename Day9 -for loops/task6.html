@@ -9,6 +9,21 @@
 <body>
     <script>
         // print first n prime numbers where n is provided by user using JS prompts
+        let number=parseInt(prompt("Enter the nth place:"));
+        let count=0,i,j,c;
+        document.write("The first ",number," prime numbers are listed below:<br>");
+        for(i=2; count<number; i++){
+            c=0;
+            for(j=2; j<=i ; j++){
+                if(i%j == 0){
+                    c++;
+                }
+            }
+            if(c==1){
+                document.write(i," ");
+                count++;
+            }
+        }
     </script>
 </body>
 </html>

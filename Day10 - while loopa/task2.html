@@ -9,7 +9,15 @@
 <body>
     <script>
         // find the sum of first 10 even natural numbers using while loop
-
+        let sum=0,count=0,n=1;
+        while(count<10){
+            if(n%2==0){
+                sum+=n; 
+                count++;
+            }
+            n++;
+        }
+        document.write("The sum of first 10 even natural numbers is :",sum);
     </script>
 </body>
 </html>

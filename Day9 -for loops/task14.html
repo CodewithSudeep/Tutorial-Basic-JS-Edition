@@ -9,9 +9,16 @@
 <body>
     <script>
         // take multi-digit number from user
-
-
         // find the reverse of given number
+        let quo,rem,rev=0;
+        let number= Number(prompt("Enter any multi-digit number:"));
+        n=number;
+        for(let i=0;number>0;i++){
+            rem=number%10;
+            rev=(rev*10)+rem;
+            number=Math.floor(number/10);
+        }
+        document.write("The reverse of ",n," is ",rev);
         
     </script>
 </body>

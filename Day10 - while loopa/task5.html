@@ -9,7 +9,15 @@
 <body>
     <script>
         // find the reverse of given number using for loop
-        
+        let number=Number(prompt("Enter the number:"));
+        let rev=0,rem;
+        n=number;
+        while (number>0){
+        rem = number % 10;
+        rev = rev * 10 + rem ;
+        number = Math.floor(number/10);
+        }
+        document.write("The reverse of ",n," is ",rev);
 
     </script>
 </body>

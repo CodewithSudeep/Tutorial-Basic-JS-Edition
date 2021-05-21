@@ -9,6 +9,22 @@
 <body>
     <script>
         // find first 5 prime numbers using for loop
+        let count=0;
+        document.write("The first 5 prime numbers are:<br>");
+        let i,j,c;
+        for(i=2;count<5;i++){
+             c=0;
+            for(j=2;j<=i;j++){
+                if(i%j ==0){
+                    c++;
+                }
+            }
+            if(c==1){
+                document.write(i,"<br>");
+                count++;
+            }
+        }
+        
     </script>
 </body>
 </html>

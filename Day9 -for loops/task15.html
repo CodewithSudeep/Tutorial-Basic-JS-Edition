@@ -9,8 +9,16 @@
 <body>
     <script>
         // take a number from user and find it's binary value ( in 0s and 1s)
-
+        let number=parseInt(prompt("Enter a number:"));
         // hint : prepend all remainders in a string.
+        let bin=0,rem,n=number,div=1;
+        for(let i=0; number>0;i++){
+            rem=number%2;
+            number=parseInt(number/2);
+            bin=bin + rem*div;
+            div=div*10;
+        }
+        document.write("The binary value of ",n," is : ",bin);
     </script>
 </body>
 </html>
