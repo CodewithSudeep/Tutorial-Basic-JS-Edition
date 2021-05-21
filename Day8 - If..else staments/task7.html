@@ -8,16 +8,23 @@
 </head>
 <body>
     <script>
-        let nummber = 99;
+       
+       let number = prompt("Enter a number");
 
-        // compare the given var if it is greater than 90 or smaller than 100
+       //check if number is exactly divided by 10
+       // if it is divided, then determine if it is a even number or odd number
 
-        if(nummber > 90 || nummber < 100){
-            document.write("hello");
-        } else {
-            document.write("byee");
-        }
-        // write the result
+       // if it in not divided, find the remainder
+       // determine if remainder is even or odd.
+
+       if(number %2!= 0){
+           document.write('odd');
+       } else {
+           document.write('even');
+       }
+
+       
+        
     </script>
 </body>
 </html>
