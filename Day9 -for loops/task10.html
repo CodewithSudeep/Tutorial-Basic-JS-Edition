@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print fibbonaci series upto nth terms where n is provided by user
+         const number = parseInt(prompt("enter the number of terms"));
+         let n1 =0;
+         let n2 = 1;
+         let nextnum;
+
+         for(i= 1; i<=number; i++){
+          nextnum = n1 + n2;
+          n1 = n2;
+          n2 = nextnum;
+          document.write(n1);
+         }
+    </script>
+</body>
+</html>
