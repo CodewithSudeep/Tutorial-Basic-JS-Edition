@@ -11,6 +11,16 @@
         // take a number from user and find it's binary value ( in 0s and 1s)
 
         // hint : prepend all remainders in a string.
+        let num=parseInt(prompt("Enter multidigit number:"));
+        let binary="";
+        for(let i=1;num>0;i++)
+        {
+            binary=binary+String(num%2);
+            num=Math.floor(num/2);
+        }
+
+        // find the reverse of given number
+        document.write("Binary number is:",binary);
     </script>
 </body>
 </html>

@@ -9,9 +9,14 @@
 <body>
     <script>
         // take a number from user
-
+        let num=parseInt(prompt("Enter the term"));
+        let pro=1;
         // print it's multipication table using for loop
-        
+        for(i=1;i<=10;i++)
+        {
+            pro=num*i;
+            document.write(`${num}*${i}=${pro}<br/>`);
+        }
     </script>
 </body>
 </html>

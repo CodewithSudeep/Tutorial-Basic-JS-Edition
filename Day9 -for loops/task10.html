@@ -9,7 +9,20 @@
 <body>
     <script>
         // print fibbonaci series upto nth terms where n is provided by user
-        
+        let num=parseInt(prompt("Enter the term"));
+        let a=0;
+        let b=1;
+        let c;
+        document.write(a);
+        document.write("<br>",b);
+        for(i=1;i<num-1;i++)
+        {
+            c=a+b;
+            a=b;
+            b=c;
+            document.write("<br>",c);
+
+        }
     </script>
 </body>
 </html>

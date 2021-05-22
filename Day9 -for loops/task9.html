@@ -9,6 +9,18 @@
 <body>
     <script>
         // find a number , which is exactly divisible  3, 4 and 5
+        let count=0;
+        // find  first 20 numbers which are exactly divisible either by 5,7 or 9.
+        for(let i=1;count<20;i++)
+        {
+            if(i%3==0&&i%4==0&&i%5==0)
+            {
+                document.write(i);
+                document.write("<br>");
+                count++;
+            }
+            
+        }
     </script>
 </body>
 </html>

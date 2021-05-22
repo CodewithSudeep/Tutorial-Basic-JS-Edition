@@ -10,13 +10,34 @@
     <script>
        
        let number = prompt("Enter a number");
-
+        let extTendiv=number%10;
+        let extTwodiv=number%2;
        //check if number is exactly divided by 10
-       // if it is divided, then determine if it is a even number or odd number
+       if (extTendiv==0) {
+           document.write("Exactly divisible by 10");
+           if (extTwodiv==0) {
+               document.write("<br>The number is even");
+           } else {
+            document.write("<br>The number is odd");
+           }
+            // if it is divided, then determine if it is a even number or odd number
+       }
+       else
+       {
+           // if it in not divided, find the remainder
 
-       // if it in not divided, find the remainder
+        document.write("Not exactly divisible by 10");
        // determine if remainder is even or odd.
 
+           if (extTwodiv==0) {
+               document.write("<br>The number is even");
+           } else {
+            document.write("<br>The number is odd");
+           }
+       }
+      
+
+       
        
 
        

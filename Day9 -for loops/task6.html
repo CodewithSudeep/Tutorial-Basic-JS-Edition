@@ -9,6 +9,25 @@
 <body>
     <script>
         // print first n prime numbers where n is provided by user using JS prompts
+        let num=parseInt(prompt("Enter term to find prime number"));
+        let count=0;
+        for(let i=2;count<num;i++)
+        {
+            let remCount=0;
+            for(let j=2;j<=i;j++)
+            {
+                if(i%j==0)
+                {
+                    remCount++;
+                }
+            }
+            if(remCount==1)
+            {
+                document.write("<br>",i);
+                count++;
+            }
+            
+        }
     </script>
 </body>
 </html>
