@@ -9,7 +9,18 @@
 <body>
     <script>
         // find the sum of first 10 odd natural numbers using while loop
-
+        
+        let count = 0;
+          let number = 1;
+          let sum = 0;
+          while(count<10){
+              if(number % 2 == 1){
+                  sum += number;
+                  count++;
+              }
+              number++;
+          }
+          document.write('The sum of first 10 odd natural numbers is:',sum);
     </script>
 </body>
 </html>

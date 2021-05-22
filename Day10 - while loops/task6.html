@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // take two numbers using JS prompts
+
+        //num1
+
+        //num2
+
+        // use if else if statements to calculate sum, product, difference untill the user choose to quit
+        // hint: use do while loop.
+        do
+        {
+        let num1 = parseInt(prompt('Enter first number'));
+        let num2 = parseInt(prompt('Enter second number'));
+        let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
+            if(choice == 1)
+            {
+                sum = num1 + num2;
+                document.write(sum);
+            }
+            else if(choice == 2)
+            {
+                product = num1 * num2;
+                document.write(product);
+            }
+            else if(choice == 3)
+            {
+                difference = num1 - num2;
+                document.write(difference)
+            }
+            else
+            {
+                document.write('Quit');
+            }
+        }while(choice != 4);
+
+    </script>
+</body>
+</html>
