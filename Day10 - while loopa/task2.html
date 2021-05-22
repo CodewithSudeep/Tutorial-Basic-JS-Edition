@@ -9,6 +9,16 @@
 <body>
     <script>
         // find the sum of first 10 even natural numbers using while loop
+        let i=1;
+        let count=0, sum=0;
+        while(count<=10){
+            if(i%2==0){
+                 sum += i;
+                 count++;
+            }
+            i++;
+        }
+        document.write("the sum of first 10 even numbers is:",sum);
 
     </script>
 </body>
