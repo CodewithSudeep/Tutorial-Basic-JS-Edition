@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print first n prime numbers where n is provided by user using JS prompts
+        let number = prompt('Enter the number');
+            for (var counter = 2; counter <= number; counter++) {
+
+                var notPrime = false;
+                for (var i = 2; i <= counter; i++) {
+                    if (counter % i === 0 && i !== counter) {
+                        notPrime = true;
+                    }
+                }
+                if (notPrime === false) {
+                    document.write(counter+ " ");
+                }
+            }
+    </script>
+</body>
+</html>
