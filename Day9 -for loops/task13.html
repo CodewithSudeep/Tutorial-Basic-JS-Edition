@@ -14,6 +14,18 @@
         // note: use single loop.
 
         // hint:  set a counter = 8
+        let number =  prompt('Enter a number');
+        let count = 0;
+        var sum = String('');
+        for(let i = 0;count<8;i++){
+            count++;
+            if(count<=5){
+            sum = sum + String(number);   //here value inside number is appended (concat) instead of addition as number is a string type
+            }else{
+                sum = Number(sum) * number;
+            }         
+        }
+        document.write(sum);
     </script>
 </body>
 </html>

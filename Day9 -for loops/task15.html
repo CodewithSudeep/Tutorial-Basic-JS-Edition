@@ -11,9 +11,13 @@
         // take a number from user and find it's binary value ( in 0s and 1s)
 
         // hint : prepend all remainders in a string.
-        let number = parseInt(prompt('Enter the number'));
-        let result = number.toString(2);
-        document.write(result);
+        let number = parseInt(prompt('Enter a number'));
+        let binary = '';
+        for(let i=1;number>0;i++){
+            binary = String(number%2) + binary;
+            number = Math.floor(number/2);
+        }
+        document.write(parseInt(binary));
     </script>
 </body>
 </html>

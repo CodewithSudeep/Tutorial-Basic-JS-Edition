@@ -7,10 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
         // given sequence : 
         // 1,2,2,4,8,32.......
         // Extend given sequence upto nth terms , where n is provided by user.
+        // const display = document.querySelector('#display');
+       
+        let n =prompt("enter the no of term of the sequence");
+        count=0;
+        for(let i=1;count<=n;i++){
+            count++;
+            if(i==1){
+                var a=1;
+                document.write(a ," , ")
+            }
+            else if(i==2){
+                var b=2;
+                document.write(b ," ,")
+            }
+            else{
+                var c=a*b;
+                document.write(c ,", ");
+                a=b;
+                b=c;
+
+            }
+        }
     </script>
 </body>
 </html>

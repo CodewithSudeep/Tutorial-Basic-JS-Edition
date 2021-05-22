@@ -9,6 +9,22 @@
 <body>
     <script>
         // print first n prime numbers where n is provided by user using JS prompts
+        let n=prompt("enter number upto which prime number are required")
+        let isprime=1;
+        for( let i=2;i<=n;i++){
+          for(let j=2;j<i;j++){
+              if(i%j==0){
+                  isprime=0;
+                  break;
+              }
+          }
+          if(isprime==1){
+              document.write(i,"<br>")
+          }
+          isprime=1;
+            
+            }
+        
     </script>
 </body>
 </html>
