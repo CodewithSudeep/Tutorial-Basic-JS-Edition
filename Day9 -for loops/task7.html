@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const display = document.querySelector('#display');
+        // given sequence : 
+        // 1,2,2,4,8,32.......
+        // Extend given sequence upto nth terms , where n is provided by user.
+        let nterms = parseInt(prompt("Enter the nth term of the sequence "));
+        count = 0;
+        for(i=1; count < nterms ;i++){
+            count++;
+            if(i==1){
+                var a =1;
+                display.innerHTML += a + " ";
+            }else if(i==2){
+                var b = 2;
+                display.innerHTML += b + " ";
+            }else{
+                let c = a*b;
+                display.innerHTML += c + " ";
+                a = b;
+                b = c;
+            }
+        }
+    </script>
+</body>
+</html>
