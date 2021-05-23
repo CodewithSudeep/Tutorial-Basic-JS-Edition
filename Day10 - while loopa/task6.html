@@ -8,16 +8,33 @@
 </head>
 <body>
     <script>
-        // take two numbers using JS prompts
-
+         // take two numbers using JS prompts
         //num1
-
+          // let num1 = parseInt(prompt('Enter the first number'));
         //num2
-
-        let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
-
+        //    let num2 = parseInt(prompt('Enter the second number'));
+        //    let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
         // use if else if statements to calculate sum, product, difference untill the user choose to quit
         // hint: use do while loop.
+        do{
+            let num1 = parseInt(prompt('Enter the first number'));
+            let num2 = parseInt(prompt('Enter the second number'));
+           var choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
+            if(choice == 1){
+                let result = num1 + num2;
+                document.write(`The sum of ${num1} and ${num2} is `,result,"<br/>");
+            }else if(choice ==2){
+                let result = num1 * num2;
+                document.write(`The product of ${num1} and ${num2} is `,result,"<br/>");
+            }else if(choice == 3){
+                let result = num1-num2;
+                document.write(`The diiference of ${num1} and ${num2} is `,result,"<br/>");
+            }else{
+                document.write('Wrong Input');
+            }
+            choice = prompt("Press 4 to quit and any another key to continue");
+        }while(choice != 4);
+
 
 
     </script>

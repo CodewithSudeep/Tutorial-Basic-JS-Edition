@@ -9,6 +9,18 @@
 <body>
     <script>
         // find the sum of first 10 odd natural numbers using while loop
+        let current = 1;
+            let sum = 0;
+            let i = 1;
+            while( i <= 10){
+                i++;
+                sum = sum + current; 
+
+                //next even number
+                current = current + 2;
+                
+            }            
+            document.write(sum);
 
     </script>
 </body>

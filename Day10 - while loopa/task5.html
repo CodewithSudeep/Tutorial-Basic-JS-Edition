@@ -9,6 +9,17 @@
 <body>
     <script>
         // find the reverse of given number using for loop
+        let number = prompt('Enter a multi-digit number');
+         
+         for(let i =1 ;number > 0 ;i++){
+             if(i==1){
+                  var rev = String(number%10);
+             }else{
+                 rev = rev + String(number%10);
+             }
+             number = Math.floor(number/10);
+         }
+         document.write(parseInt(rev));
         
 
     </script>
