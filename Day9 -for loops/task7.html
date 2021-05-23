@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // given sequence : 
+        // 1,2,2,4,8,32.......
+        // Extend given sequence upto nth terms , where n is provided by user.
+
+        let sequence = prompt("enter sequence");
+        count = 0;
+        for(i=1; count < sequence ;i++){
+            count++;
+            if(i==1){
+                var a =1;
+                document.write(a);
+            }else if(i==2){
+                var b = 2;
+                document.write(b);
+            }else{
+                let c = a*b;
+                document.write(c);
+                a = b;
+                b = c;
+            }
+        }
+    </script>
+</body>
+</html>
