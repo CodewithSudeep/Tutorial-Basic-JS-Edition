@@ -7,21 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="display"></p>
     <script>
         // print first n prime numbers where n is provided by user using JS prompts
-        let number = prompt('Enter the number');
-            for (var counter = 2; counter <= number; counter++) {
-
-                var notPrime = false;
-                for (var i = 2; i <= counter; i++) {
-                    if (counter % i === 0 && i !== counter) {
-                        notPrime = true;
-                    }
-                }
-                if (notPrime === false) {
-                    document.write(counter+ " ");
-                }
-            }
+         let number = prompt("enter a number");
+         let count = 0;
+         for(let i = 2; count < number; i++){
+             let counter = 0;
+             for(let j = 2 ;j<=i;j++){
+                 if(i%j == 0){
+                     counter++;
+                 }
+             }
+             if(counter == 1){
+                 document.write(i+' ,');
+                 count++;
+             }
+         }
     </script>
 </body>
 </html>
