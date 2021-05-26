@@ -11,14 +11,41 @@
         // take two numbers using JS prompts
 
         //num1
+      //  let num1 = prompt('enter 1st number');
 
         //num2
+      //  let num2 = prompt('enter 2nd number');
 
-        let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
+       // let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
 
         // use if else if statements to calculate sum, product, difference untill the user choose to quit
         // hint: use do while loop.
 
+        do
+        {
+        let num1 = prompt('Enter 1st number');
+        let num2 = prompt('Enter 2nd number');
+        let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
+            if(choice == 1)
+            {
+                sum = num1 + num2;
+                document.write(sum);
+            }
+            else if(choice == 2)
+            {
+                product = num1 * num2;
+                document.write(product);
+            }
+            else if(choice == 3)
+            {
+                difference = num1 - num2;
+                document.write(difference)
+            }
+            else
+            {
+                document.write('Quit');
+            }
+        }while(choice != 4);
 
     </script>
 </body>

@@ -10,7 +10,13 @@
     <script>
         // find the reverse of given number using for loop
         
-
+        var number = prompt("enter number");
+        let reverse = "";
+        while (number > 0) {
+            reverse = reverse + String(number % 10);
+            number = Math.floor(number / 10);
+        }
+        document.write(reverse);
     </script>
 </body>
 </html>
